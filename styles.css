@@ -41,7 +41,7 @@ ebody, html {
 }
 
 #stripe-container {
-    position: absolute;
+    position: fixed;
     z-index: 3;
     left: 50%;
     bottom: 0;
