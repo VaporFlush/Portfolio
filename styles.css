@@ -114,7 +114,7 @@ ebody, html {
     justify-content: center; /* Centers the content horizontally */
     align-items: center; /* Centers the content vertically */
     height: 100vh; /* Makes the title section take up the full height of the viewport */
-    background-color: rgba(255, 255, 255, 0.8); /* Adding a semi-transparent white background for better readability */
+    padding-top: 20px;
 }
 
 /* Style the title text */
