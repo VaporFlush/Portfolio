@@ -120,7 +120,7 @@ body, html {
 #title-section h1 {
     font-family: 'BlockFont', sans-serif;
     font-size: 48px; /* Adjusting the font size */
-    color: #333; /* Set the text color */
+    color: white; /* Set the text color */
     text-align: center; /* Center-align the text */
     margin: 0; /* Remove default margin */
     padding: 20px; /* Add padding for better spacing */
