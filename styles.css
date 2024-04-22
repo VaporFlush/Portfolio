@@ -3,4 +3,5 @@ body {
     padding: 0;
     background-image: url('https://raw.githubusercontent.com/VaporFlush/Website/main/Stars.png');
     background-repeat: repeat;
+    background-size: 10%;
 }
