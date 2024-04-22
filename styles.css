@@ -1,4 +1,4 @@
-body, html {
+ebody, html {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -113,12 +113,16 @@ body, html {
     justify-content: center; /* Centers the content horizontally */
     align-items: center; /* Centers the content vertically */
     height: 100vh; /* Makes the title section take up the full height of the viewport */
+    background-color: rgba(255, 255, 255, 0.8); /* Adding a semi-transparent white background for better readability */
 }
 
 /* Style the title text */
 #title-section h1 {
     font-family: 'BlockFont', sans-serif;
-    font-size: 32px; /* Adjust the font size as needed */
-    color: grey; /* Set the text color */
+    font-size: 48px; /* Adjusting the font size */
+    color: #333; /* Set the text color */
     text-align: center; /* Center-align the text */
+    margin: 0; /* Remove default margin */
+    padding: 20px; /* Add padding for better spacing */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adding a subtle text shadow for depth */
 }
