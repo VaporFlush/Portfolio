@@ -42,7 +42,7 @@ body {
 
 #stripe-container {
     position: absolute;
-    z-index: 1; /* Set z-index above the title */
+    z-index: 3;
     left: 50%;
     bottom: 0;
     transform: translateX(-50%);
@@ -74,8 +74,8 @@ body {
 }
 
 #title-section {
-    position: relative;
-    z-index: 0; /* Set z-index below the stripes */
+    position: relative; /* Set position to relative */
+    z-index: 2; /* Ensure it's above the stripes */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,6 +95,8 @@ body {
 
 /* Project Container */
 .project-container {
+    position: relative; /* Set position to relative */
+    z-index: 1; /* Ensure it's below the title */
     display: flex;
     margin: 20px;
     padding: 20px;
