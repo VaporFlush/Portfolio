@@ -81,6 +81,7 @@ ebody, html {
         97.5% 5%, 98.75% 0%, 100% 5%, 
         100% 100%, 0% 100%
     );
+    overflow-x: hidden;
 }
 
 #stripe-pattern {
