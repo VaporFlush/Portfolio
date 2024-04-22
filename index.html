@@ -1,41 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cameron Caulkins</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden; /* Hide horizontal scrollbar */
-            background: linear-gradient(to bottom, #001f3f, #0074D9); /* Add gradient */
-        }
+<div id="app">
+  <div id="star-container">
+    <div id="star-pattern"></div>
+    <div id="star-gradient-overlay"></div>
+  </div>
+  <div id="stripe-container">
+    <div id="stripe-pattern"></div>
+  </div>
+  
+  <div id="modal-wrapper">
+    <div id="modal">
+      <div id="modal-background"></div>
+      <div id="modal-content">
+        <div id="modal-message">
+          <p class="sixty-four-font">Save progress?</p>
+        </div>
+        <div id="modal-actions">
+          <button type="button" class="modal-action">
+            <div class="modal-action-pattern"></div>
+            <div class="modal-action-fade"></div>
+            <span class="modal-action-text inter-font">Back</span>
+          </button>
+          <button type="button" class="modal-action">
+            <div class="modal-action-pattern"></div>
+            <div class="modal-action-fade"></div>
+            <span class="modal-action-text inter-font">OK</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-        .stars {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url('https://raw.githubusercontent.com/VaporFlush/Website/main/Stars.png'); /* Add stars */
-            background-repeat: repeat;
-            background-size: 10%; /* Set the background size */
-            z-index: -1; /* Set a lower z-index to place it behind the content */
-            animation: scrollBackground 30s linear infinite; /* Animate the background scrolling */
-        }
+<div id="magic-mouse-container"></div>
 
-        @keyframes scrollBackground {
-            from {
-                background-position: 0 0; /* Start position */
-            }
-            to {
-                background-position: 100% 0; /* End position */
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="stars"></div>
-</body>
-</html>
+<div id="cursor">
+  <img 
+    src="https://assets.codepen.io/1468070/Arrow+-+Cursor.png" 
+    alt="Arrow Cursor" 
+  />
+  <div id="cursor-eyes">
+    <div class="cursor-eye"></div>
+    <div class="cursor-eye"></div>
+  </div>
+</div>
