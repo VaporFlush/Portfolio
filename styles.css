@@ -2,6 +2,7 @@ body, html {
     margin: 0;
     padding: 0;
     height: auto; /* Change height to auto */
+     overflow-x: hidden;
 }
 
 #stars, #gradient, #radial-gradient {
