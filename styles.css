@@ -50,6 +50,8 @@ body, html {
     z-index: -1;
 }
 
+
+
 :root {
   --stripe-primary-rgb: 255, 255, 255; /* Define your primary color in RGB values */
   --secondary-stripe-rgb: 225, 225, 225; /* Define your secondary color in RGB values */
@@ -119,6 +121,12 @@ body, html {
   animation: scrollBackground 120s linear infinite;
 }
 
+@font-face {
+    font-family: 'BlockFont'; /* Choose a name for your font family */
+    src: url('BlockFont.otf') format('opentype'); /* Specify the path to your font file */
+    /* You may also need to include additional font formats for better browser compatibility */
+}
+
 /* Add this CSS to center the title */
 #title-section {
     display: flex;
@@ -129,6 +137,7 @@ body, html {
 
 /* Style the title text */
 #title-section h1 {
+    font-family: 'BlockFont', sans-serif;
     font-size: 32px; /* Adjust the font size as needed */
     color: white; /* Set the text color */
     text-align: center; /* Center-align the text */
