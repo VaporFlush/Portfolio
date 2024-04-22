@@ -1,9 +1,8 @@
-ebody, html {
+body {
     margin: 0;
     padding: 0;
     height: 100%;
     overflow-x: hidden; /* Disable horizontal scrolling */
-    overflow-y: auto;
 }
 
 #stars, #gradient, #radial-gradient {
@@ -42,26 +41,19 @@ ebody, html {
 }
 
 #stripe-container {
-    position: relative;
-    z-index: 3;
+    position: absolute;
+    z-index: 1; /* Set z-index above the title */
     left: 50%;
     bottom: 0;
     transform: translateX(-50%);
     width: 100%;
+    min-width: 2000px;
     height: 50vh;
     min-height: 240px;
     background-color: rgb(255, 255, 255);
     clip-path: polygon(
-        0% 5%, 5% 0%, 10% 5%, 
-        15% 0%, 20% 5%, 25% 0%, 
-        30% 5%, 35% 0%, 40% 5%, 
-        45% 0%, 50% 5%, 55% 0%, 
-        60% 5%, 65% 0%, 70% 5%, 
-        75% 0%, 80% 5%, 85% 0%, 
-        90% 5%, 95% 0%, 100% 5%, 
-        100% 100%, 0% 100%
+        /* Clip-path coordinates */
     );
-    overflow-x: hidden;
 }
 
 #stripe-pattern {
@@ -79,33 +71,26 @@ ebody, html {
         rgb(225, 225, 225) 100%
     );
     box-shadow: inset 0rem 0.5rem 2rem 0.25rem rgba(0, 0, 0, 0.4);
-    animation: scrollBackground 120s linear infinite;
 }
 
-@font-face {
-    font-family: 'BlockFont'; /* Choose a name for your font family */
-    src: url('BlockFont.otf') format('opentype'); /* Specify the path to your font file */
-    /* You may also need to include additional font formats for better browser compatibility */
-}
-
-/* Add this CSS to center the title */
 #title-section {
-    display: fixed;
-    justify-content: center; /* Centers the content horizontally */
-    align-items: flex-start; /* Centers the content vertically */
-    height: 50vh; /* Makes the title section take up the full height of the viewport */
-    padding-top: 20%;
+    position: relative;
+    z-index: 0; /* Set z-index below the stripes */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding-top: 20px;
 }
 
-/* Style the title text */
 #title-section h1 {
     font-family: 'BlockFont', sans-serif;
-    font-size: 48px; /* Adjusting the font size */
-    color: white; /* Set the text color */
-    text-align: center; /* Center-align the text */
-    margin: 0; /* Remove default margin */
-    padding: 20px; /* Add padding for better spacing */
-    text-shadow: 2px 2px 4px rgba(1, 1, 1, 0.5); /* Adding a subtle text shadow for depth */
+    font-size: 48px;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    text-shadow: 2px 2px 4px rgba(1, 1, 1, 0.5);
 }
 
 /* Project Container */
@@ -118,27 +103,23 @@ ebody, html {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Project Image */
 .project-image {
-    width: 200px; /* Adjust width as needed */
-    height: auto; /* Maintain aspect ratio */
+    width: 200px;
+    height: auto;
     margin-right: 20px;
-    border-radius: 8px; /* Rounded corners */
+    border-radius: 8px;
 }
 
-/* Project Details */
 .project-details {
-    flex: 1; /* Allow the details to take up remaining space */
+    flex: 1;
 }
 
-/* Project Title */
 .project-title {
     font-size: 24px;
     margin-bottom: 10px;
     color: #333;
 }
 
-/* Project Description */
 .project-description {
     font-size: 16px;
     color: #666;
