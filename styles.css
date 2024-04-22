@@ -116,5 +116,5 @@ body, html {
     rgb(var(--secondary-stripe-rgb)) 100%
   );
   box-shadow: inset 0rem 0.5rem 2rem 0.25rem rgb(0 0 0 / 40%);
-  animation: pan 360s linear infinite;
+  animation: pan 30 linear infinite;
 }
