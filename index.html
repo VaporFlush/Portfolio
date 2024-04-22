@@ -28,17 +28,17 @@
                 <p class="project-description">Project 1 Description</p>
             </div>
         </div>
-
-        <!-- Add more project containers as needed -->
-        <!-- Example:
-        <div class="project-container">
-            <img src="project2.jpg" alt="Project 2" class="project-image">
-            <div class="project-details">
-                <h2 class="project-title">Project 2 Title</h2>
-                <p class="project-description">Project 2 Description</p>
-            </div>
-        </div>
-        -->
     </div>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            var stripeContainer = document.getElementById('stripe-container');
+            var titleSection = document.getElementById('title-section');
+            var scrollPosition = window.scrollY;
+
+            // Adjust the top position of the stripe container based on the scroll position
+            stripeContainer.style.top = scrollPosition + 'px';
+        });
+    </script>
 </body>
 </html>
