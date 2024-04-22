@@ -151,3 +151,29 @@ body, html {
     color: #666;
 }
 
+/* Top Bar */
+.top-bar {
+    background-color: #333;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.about-button {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.about-button:hover {
+    background-color: #ddd;
+}
+
+/* Rest of your existing styles go here */
