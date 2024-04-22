@@ -1,9 +1,6 @@
-/* styles.css */
-
 body {
-    background-image: url('Stars.png');
-    background-size: 10%;
-    background-repeat: repeat;
     margin: 0;
     padding: 0;
+    background-image: url('https://raw.githubusercontent.com/VaporFlush/Website/main/Stars.png');
+    background-repeat: repeat;
 }
