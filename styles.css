@@ -60,7 +60,7 @@ body, html {
 
 
 #stripe-container {
-  position: absolute;
+  position: relative;
   z-index: 3;
   left: 50%;
   bottom: 0px;
