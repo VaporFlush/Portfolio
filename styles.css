@@ -108,11 +108,17 @@ body, html {
     text-shadow: 2px 2px 4px rgba(1, 1, 1, 0.5); /* Adding a subtle text shadow for depth */
 }
 
+/* Project List */
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 /* Project Container */
 .project-container {
-    display: flex;
-    margin: 20px;
-    padding: 20px;
+    width: calc(33.33% - 20px); /* Adjust width to fit three containers in a row */
+    margin-bottom: 20px;
     background-color: #dddddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -122,15 +128,15 @@ body, html {
 
 /* Project Image */
 .project-image {
-    width: 200px; /* Adjust width as needed */
+    width: 100%; /* Adjust width as needed */
     height: auto; /* Maintain aspect ratio */
-    margin-right: 20px;
-    border-radius: 8px; /* Rounded corners */
+    border-top-left-radius: 8px; /* Adjust border radius */
+    border-top-right-radius: 8px; /* Adjust border radius */
 }
 
 /* Project Details */
 .project-details {
-    flex: 1; /* Allow the details to take up remaining space */
+    padding: 20px;
 }
 
 /* Project Title */
