@@ -63,11 +63,11 @@ body, html {
   position: absolute;
   z-index: 3;
   left: 50%;
-  bottom: 0px;
-  translate: -50% 0%;
+  bottom: 0;
+  transform: translateX(-50%);
   width: 100%;
-  min-width: 2000px;
   background-color: rgb(var(--stripe-primary-rgb));
+  overflow: hidden;
   
   clip-path: polygon(
     0% 5%, 1.25% 0%, 2.5% 5%, 
