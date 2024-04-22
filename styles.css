@@ -119,3 +119,17 @@ body, html {
   animation: scrollBackground 120s linear infinite;
 }
 
+/* Add this CSS to center the title */
+#title-section {
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    height: 100vh; /* Makes the title section take up the full height of the viewport */
+}
+
+/* Style the title text */
+#title-section h1 {
+    font-size: 32px; /* Adjust the font size as needed */
+    color: white; /* Set the text color */
+    text-align: center; /* Center-align the text */
+}
