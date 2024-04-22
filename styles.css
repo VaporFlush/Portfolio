@@ -45,7 +45,7 @@ body, html {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 2px; /* Adjust the height as needed */
+    height: 100px; /* Adjust the height as needed */
     background-color: #ffffff; /* Change the color as desired */
     z-index: -1; /* Ensure it's behind other content */
 }
