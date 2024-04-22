@@ -129,10 +129,15 @@ body, html {
 
 /* Add this CSS to center the title */
 #title-section {
-    display: flex;
-    justify-content: center; /* Centers the content horizontally */
-    align-items: center; /* Centers the content vertically */
-    height: 100vh; /* Makes the title section take up the full height of the viewport */
+    font-family: 'BlockFont', sans-serif;
+    font-size: 32px;
+    color: grey;
+    text-align: center;
+    /* Add black text shadow */
+    text-shadow: -1px -1px 0 #000,  
+                  1px -1px 0 #000,
+                 -1px  1px 0 #000,
+                  1px  1px 0 #000;
 }
 
 /* Style the title text */
