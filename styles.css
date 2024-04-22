@@ -111,13 +111,12 @@ body, html {
 /* Project List */
 .project-list {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column; /* Set the direction to vertical */
 }
 
 /* Project Container */
 .project-container {
-    width: calc(33.33% - 20px); /* Adjust width to fit three containers in a row */
+    width: calc(100% - 40px); /* Adjust width to fit the container within the available space */
     margin-bottom: 20px;
     background-color: #dddddd;
     border-radius: 8px;
