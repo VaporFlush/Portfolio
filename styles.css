@@ -106,3 +106,39 @@ ebody, html {
     padding: 20px; /* Add padding for better spacing */
     text-shadow: 2px 2px 4px rgba(1, 1, 1, 0.5); /* Adding a subtle text shadow for depth */
 }
+
+/* Project Container */
+.project-container {
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Project Image */
+.project-image {
+    width: 200px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px;
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Project Details */
+.project-details {
+    flex: 1; /* Allow the details to take up remaining space */
+}
+
+/* Project Title */
+.project-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Project Description */
+.project-description {
+    font-size: 16px;
+    color: #666;
+}
