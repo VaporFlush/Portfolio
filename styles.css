@@ -90,7 +90,7 @@ ebody, html {
 /* Add this CSS to center the title */
 #title-section {
     display: fixed;
-    justify-content: center; /* Centers the content horizontally */
+    justify-content: flex-start; /* Centers the content horizontally */
     align-items: center; /* Centers the content vertically */
     height: 50vh; /* Makes the title section take up the full height of the viewport */
     padding-top: 20%;
