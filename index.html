@@ -1,45 +1,53 @@
-<div id="app">
-  <div id="star-container">
-    <div id="star-pattern"></div>
-    <div id="star-gradient-overlay"></div>
-  </div>
-  <div id="stripe-container">
-    <div id="stripe-pattern"></div>
-  </div>
-  
-  <div id="modal-wrapper">
-    <div id="modal">
-      <div id="modal-background"></div>
-      <div id="modal-content">
-        <div id="modal-message">
-          <p class="sixty-four-font">Save progress?</p>
-        </div>
-        <div id="modal-actions">
-          <button type="button" class="modal-action">
-            <div class="modal-action-pattern"></div>
-            <div class="modal-action-fade"></div>
-            <span class="modal-action-text inter-font">Back</span>
-          </button>
-          <button type="button" class="modal-action">
-            <div class="modal-action-pattern"></div>
-            <div class="modal-action-fade"></div>
-            <span class="modal-action-text inter-font">OK</span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cameron Caulkins</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
 
-<div id="magic-mouse-container"></div>
+        #stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Place stars behind other content */
+            background-image: url('https://raw.githubusercontent.com/VaporFlush/Website/main/Stars.png');
+            background-repeat: repeat;
+            background-size: 10%;
+            animation: scrollBackground 30s linear infinite;
+        }
 
-<div id="cursor">
-  <img 
-    src="https://assets.codepen.io/1468070/Arrow+-+Cursor.png" 
-    alt="Arrow Cursor" 
-  />
-  <div id="cursor-eyes">
-    <div class="cursor-eye"></div>
-    <div class="cursor-eye"></div>
-  </div>
-</div>
+        #gradient {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -2; /* Place gradient behind stars */
+            background-image: linear-gradient(to bottom, #0d47a1, #1565c0);
+        }
+
+        @keyframes scrollBackground {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: 100% 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="stars"></div>
+    <div id="gradient"></div>
+    <!-- Your content goes here -->
+</body>
+</html>
