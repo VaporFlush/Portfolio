@@ -92,7 +92,7 @@ body, html {
     display: flex;
     justify-content: center; /* Centers the content horizontally */
     align-items: center; /* Centers the content vertically */
-    height: 100vh; /* Makes the title section take up the full height of the viewport */
+    height: 25%; /* Makes the title section take up the full height of the viewport */
     padding-top: 20px;
 }
 
@@ -115,6 +115,8 @@ body, html {
     background-color: #f9f9f9;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; /* Add this line to make the project container positioned relative */
+    z-index: 5;
 }
 
 /* Project Image */
