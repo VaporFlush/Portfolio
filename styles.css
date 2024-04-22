@@ -49,7 +49,7 @@ body, html {
 }
 
 #bar {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left: 0; /* Position it in the middle of the screen horizontally */
     width: 100%; /* Adjust the width as needed */
