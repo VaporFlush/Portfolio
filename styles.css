@@ -142,3 +142,34 @@ body, html {
     color: white; /* Set the text color */
     text-align: center; /* Center-align the text */
 }
+
+/* Style for the project description box */
+.project-box {
+    background-color: #ffffff; /* Background color for the box */
+    border: 1px solid #e0e0e0; /* Border color and thickness */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    margin-bottom: 20px; /* Margin at the bottom to separate boxes */
+}
+
+/* Style for the project photo */
+.project-photo {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 10px; /* Margin at the bottom to separate from title */
+}
+
+/* Style for the project title */
+.project-title {
+    font-size: 20px; /* Font size for the title */
+    font-weight: bold; /* Bold font weight */
+    color: #333333; /* Text color */
+    margin-bottom: 10px; /* Margin at the bottom to separate from description */
+}
+
+/* Style for the project description */
+.project-description {
+    font-size: 16px; /* Font size for the description */
+    color: #666666; /* Text color */
+}
