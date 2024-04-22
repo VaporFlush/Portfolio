@@ -50,6 +50,13 @@ body, html {
     z-index: -1;
 }
 
+:root {
+  --stripe-primary-rgb: 255, 255, 255; /* Define your primary color in RGB values */
+  --secondary-stripe-rgb: 0, 0, 0; /* Define your secondary color in RGB values */
+  --primary-stripe-rgb: 255, 0, 0; /* Define another color in RGB values */
+}
+
+
 #stripe-container {
   position: absolute;
   z-index: 3;
