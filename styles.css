@@ -118,3 +118,19 @@ body, html {
   box-shadow: inset 0rem 0.5rem 2rem 0.25rem rgb(0 0 0 / 40%);
   animation: scrollBackground 120s linear infinite;
 }
+
+.textbox {
+  width: 300px; /* Set the width of the text box */
+  padding: 10px; /* Add padding to provide space between text and border */
+  border: 2px solid #ccc; /* Add a border with a light gray color */
+  border-radius: 5px; /* Round the corners of the text box */
+  font-size: 16px; /* Set the font size of the text */
+  outline: none; /* Remove the default outline style */
+}
+
+/* Style the text box when it's focused */
+.textbox:focus {
+  border-color: #007bff; /* Change border color to blue when focused */
+  box-shadow: 0 0 5px #007bff; /* Add a box shadow when focused */
+}
+
