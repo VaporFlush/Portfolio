@@ -124,5 +124,5 @@ ebody, html {
     text-align: center; /* Center-align the text */
     margin: 0; /* Remove default margin */
     padding: 20px; /* Add padding for better spacing */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adding a subtle text shadow for depth */
+    text-shadow: 2px 2px 4px rgba(1, 1, 1, 0.5); /* Adding a subtle text shadow for depth */
 }
