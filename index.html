@@ -39,5 +39,14 @@
         </div>
         -->
     </div>
+
+// JavaScript code to handle the parallax effect for the stripes
+window.addEventListener('scroll', function() {
+    var scrollPosition = window.scrollY;
+    var stripeContainer = document.getElementById('stripe-container');
+    stripeContainer.style.backgroundPosition = 'center ' + (-scrollPosition * 0.5) + 'px'; // Adjust the speed of the parallax effect by changing the multiplier (0.5 in this example)
+});
+
+    
 </body>
 </html>
