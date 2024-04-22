@@ -116,8 +116,8 @@ body, html {
 
 /* Project Container */
 .project-container {
-    width: calc(100% - 40px); /* Adjust width to fit the container within the available space */
-    margin-bottom: 20px;
+    width: 90%; /* Adjust the percentage width as needed */
+    margin: 0 auto 20px; /* Center the container horizontally and add bottom margin */
     background-color: #dddddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -150,3 +150,4 @@ body, html {
     font-size: 16px;
     color: #666;
 }
+
