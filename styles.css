@@ -1,7 +1,7 @@
 body {
-    margin: 0;
+ margin: 0;
     padding: 0;
     background-image: url('https://raw.githubusercontent.com/VaporFlush/Website/main/Stars.png');
     background-repeat: repeat;
-    transform: scale(0.1);
+    background-size: 10%; /* Set the background size to 10% of its original size */
 }
