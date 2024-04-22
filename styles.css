@@ -2,7 +2,7 @@ body, html {
     margin: 0;
     padding: 0;
     height: auto; /* Change height to auto */
-     overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 #stars, #gradient, #radial-gradient {
@@ -63,11 +63,11 @@ body, html {
   position: absolute;
   z-index: 3;
   left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
+  bottom: 0px;
+  translate: -50% 0%;
   width: 100%;
+  min-width: 2000px;
   background-color: rgb(var(--stripe-primary-rgb));
-  overflow: hidden;
   
   clip-path: polygon(
     0% 5%, 1.25% 0%, 2.5% 5%, 
@@ -99,7 +99,6 @@ body, html {
     97.5% 5%, 98.75% 0%, 100% 5%, 
     100% 100%, 0% 100%
   );
-      overflow-y: auto;
 }
 
 
@@ -129,15 +128,10 @@ body, html {
 
 /* Add this CSS to center the title */
 #title-section {
-    font-family: 'BlockFont', sans-serif;
-    font-size: 32px;
-    color: grey;
-    text-align: center;
-    /* Add black text shadow */
-    text-shadow: -1px -1px 0 #000,  
-                  1px -1px 0 #000,
-                 -1px  1px 0 #000,
-                  1px  1px 0 #000;
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    height: 100vh; /* Makes the title section take up the full height of the viewport */
 }
 
 /* Style the title text */
@@ -148,33 +142,3 @@ body, html {
     text-align: center; /* Center-align the text */
 }
 
-/* Style for the project description box */
-.project-box {
-    background-color: #ffffff; /* Background color for the box */
-    border: 1px solid #e0e0e0; /* Border color and thickness */
-    border-radius: 10px; /* Rounded corners */
-    padding: 20px; /* Padding inside the box */
-    margin-bottom: 20px; /* Margin at the bottom to separate boxes */
-}
-
-/* Style for the project photo */
-.project-photo {
-    max-width: 250px; /* Full width */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 5px; /* Rounded corners */
-    margin-bottom: 10px; /* Margin at the bottom to separate from title */
-}
-
-/* Style for the project title */
-.project-title {
-    font-size: 20px; /* Font size for the title */
-    font-weight: bold; /* Bold font weight */
-    color: #333333; /* Text color */
-    margin-bottom: 10px; /* Margin at the bottom to separate from description */
-}
-
-/* Style for the project description */
-.project-description {
-    font-size: 16px; /* Font size for the description */
-    color: #666666; /* Text color */
-}
