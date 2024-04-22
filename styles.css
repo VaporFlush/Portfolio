@@ -139,7 +139,7 @@ body, html {
 #title-section h1 {
     font-family: 'BlockFont', sans-serif;
     font-size: 32px; /* Adjust the font size as needed */
-    color: black; /* Set the text color */
+    color: grey; /* Set the text color */
     text-align: center; /* Center-align the text */
 }
 
