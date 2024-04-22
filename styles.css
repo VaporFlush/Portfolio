@@ -6,7 +6,7 @@ ebody, html {
 }
 
 #stars, #gradient, #radial-gradient {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -41,7 +41,7 @@ ebody, html {
 }
 
 #stripe-container {
-    position: fixed;
+    position: absolute;
     z-index: 3;
     left: 50%;
     bottom: 0;
