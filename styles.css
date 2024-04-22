@@ -51,7 +51,7 @@ body, html {
 #bar {
     position: fixed;
     top: 0;
-    left: 50%; /* Position it in the middle of the screen horizontally */
+    left: 0; /* Position it in the middle of the screen horizontally */
     width: 100%; /* Adjust the width as needed */
     height: 100px; /* Make it extend the full height of the viewport */
     background-color: #ffffff; /* Change the color as desired */
