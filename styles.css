@@ -49,3 +49,11 @@ body, html {
     background-color: #ffffff; /* Change the color as desired */
     z-index: -1; /* Ensure it's behind other content */
 }
+
+#content {
+    position: relative; /* Ensure content is positioned relative to the body */
+    top: 100px; /* Adjust this value to position the content below the bar */
+    padding: 20px; /* Add padding as needed */
+    color: #ffffff; /* Set text color */
+    font-family: Arial, sans-serif; /* Set font family */
+}
