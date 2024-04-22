@@ -116,7 +116,7 @@ body, html {
 
 /* Project Container */
 .project-container {
-    width: 33%; /* Adjust the percentage width as needed */
+    width: 50%; /* Adjust the percentage width as needed */
     margin: 0 auto 20px; /* Center the container horizontally and add bottom margin */
     background-color: #dddddd;
     border-radius: 8px;
@@ -127,7 +127,7 @@ body, html {
 
 /* Project Image */
 .project-image {
-    width: 33%; /* Adjust width as needed */
+    width: 50%; /* Adjust width as needed */
     height: auto; /* Maintain aspect ratio */
     border-top-left-radius: 8px; /* Adjust border radius */
     border-top-right-radius: 8px; /* Adjust border radius */
