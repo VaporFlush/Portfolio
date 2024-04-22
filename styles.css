@@ -127,7 +127,7 @@ body, html {
 
 /* Project Image */
 .project-image {
-    width: 100%; /* Adjust width as needed */
+    width: 33%; /* Adjust width as needed */
     height: auto; /* Maintain aspect ratio */
     border-top-left-radius: 8px; /* Adjust border radius */
     border-top-right-radius: 8px; /* Adjust border radius */
