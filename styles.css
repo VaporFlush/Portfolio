@@ -159,7 +159,7 @@ body, html {
 
 /* Style for the project photo */
 .project-photo {
-    max-width: 100%; /* Full width */
+    max-width: 250px; /* Full width */
     height: auto; /* Maintain aspect ratio */
     border-radius: 5px; /* Rounded corners */
     margin-bottom: 10px; /* Margin at the bottom to separate from title */
