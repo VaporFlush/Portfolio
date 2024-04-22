@@ -52,7 +52,7 @@ body, html {
 
 :root {
   --stripe-primary-rgb: 255, 255, 255; /* Define your primary color in RGB values */
-  --secondary-stripe-rgb: 200, 200, 200; /* Define your secondary color in RGB values */
+  --secondary-stripe-rgb: 225, 225, 225; /* Define your secondary color in RGB values */
   --primary-stripe-rgb: 255, 255, 255; /* Define another color in RGB values */
 }
 
