@@ -1,12 +1,12 @@
 body, html {
     margin: 0;
     padding: 0;
-    height: auto; /* Change height to auto */
-    overflow-x: hidden;
+    height: 100%;
+    overflow-x: hidden; /* Disable horizontal scrolling */
 }
 
 #stars, #gradient, #radial-gradient {
-    position: absolute; /* Change position to absolute */
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -40,105 +40,63 @@ body, html {
     }
 }
 
-#bar {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 50px; /* Adjust the height as needed */
-    background-color: #ffffff;
-    z-index: -1;
-}
-
-
-
-:root {
-  --stripe-primary-rgb: 255, 255, 255; /* Define your primary color in RGB values */
-  --secondary-stripe-rgb: 225, 225, 225; /* Define your secondary color in RGB values */
-  --primary-stripe-rgb: 255, 255, 255; /* Define another color in RGB values */
-}
-
-
 #stripe-container {
-  position: absolute;
-  z-index: 3;
-  left: 50%;
-  bottom: 0px;
-  translate: -50% 0%;
-  width: 100%;
-  min-width: 2000px;
-  background-color: rgb(var(--stripe-primary-rgb));
-  
-  clip-path: polygon(
-    0% 5%, 1.25% 0%, 2.5% 5%, 
-    3.75% 0%, 5% 5%, 6.25% 0%, 
-    7.5% 5%, 8.75% 0%, 10% 5%, 
-    11.25% 0%, 12.5% 5%, 13.75% 0%, 
-    15% 5%, 16.25% 0%, 17.5% 5%, 
-    18.75% 0%, 20% 5%, 21.25% 0%, 
-    22.5% 5%, 23.75% 0%, 25% 5%, 
-    26.25% 0%, 27.5% 5%, 28.75% 0%, 
-    30% 5%, 31.25% 0%, 32.5% 5%, 
-    33.75% 0%, 35% 5%, 36.25% 0%, 
-    37.5% 5%, 38.75% 0%, 40% 5%, 
-    41.25% 0%, 42.5% 5%, 43.75% 0%, 
-    45% 5%, 46.25% 0%, 47.5% 5%, 
-    48.75% 0%, 50% 5%, 51.25% 0%, 
-    52.5% 5%, 53.75% 0%, 55% 5%, 
-    56.25% 0%, 57.5% 5%, 58.75% 0%, 
-    60% 5%, 61.25% 0%, 62.5% 5%, 
-    63.75% 0%, 65% 5%, 66.25% 0%, 
-    67.5% 5%, 68.75% 0%, 70% 5%, 
-    71.25% 0%, 72.5% 5%, 73.75% 0%, 
-    75% 5%, 76.25% 0%, 77.5% 5%, 
-    78.75% 0%, 80% 5%, 81.25% 0%, 
-    82.5% 5%, 83.75% 0%, 85% 5%, 
-    86.25% 0%, 87.5% 5%, 88.75% 0%, 
-    90% 5%, 91.25% 0%, 92.5% 5%, 
-    93.75% 0%, 95% 5%, 96.25% 0%, 
-    97.5% 5%, 98.75% 0%, 100% 5%, 
-    100% 100%, 0% 100%
-  );
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 100%;
+    min-width: 2000px;
+    height: 28vh;
+    min-height: 240px;
+    background-color: rgb(255, 255, 255);
+    clip-path: polygon(
+        0% 5%, 1.25% 0%, 2.5% 5%, 
+        3.75% 0%, 5% 5%, 6.25% 0%, 
+        7.5% 5%, 8.75% 0%, 10% 5%, 
+        11.25% 0%, 12.5% 5%, 13.75% 0%, 
+        15% 5%, 16.25% 0%, 17.5% 5%, 
+        18.75% 0%, 20% 5%, 21.25% 0%, 
+        22.5% 5%, 23.75% 0%, 25% 5%, 
+        26.25% 0%, 27.5% 5%, 28.75% 0%, 
+        30% 5%, 31.25% 0%, 32.5% 5%, 
+        33.75% 0%, 35% 5%, 36.25% 0%, 
+        37.5% 5%, 38.75% 0%, 40% 5%, 
+        41.25% 0%, 42.5% 5%, 43.75% 0%, 
+        45% 5%, 46.25% 0%, 47.5% 5%, 
+        48.75% 0%, 50% 5%, 51.25% 0%, 
+        52.5% 5%, 53.75% 0%, 55% 5%, 
+        56.25% 0%, 57.5% 5%, 58.75% 0%, 
+        60% 5%, 61.25% 0%, 62.5% 5%, 
+        63.75% 0%, 65% 5%, 66.25% 0%, 
+        67.5% 5%, 68.75% 0%, 70% 5%, 
+        71.25% 0%, 72.5% 5%, 73.75% 0%, 
+        75% 5%, 76.25% 0%, 77.5% 5%, 
+        78.75% 0%, 80% 5%, 81.25% 0%, 
+        82.5% 5%, 83.75% 0%, 85% 5%, 
+        86.25% 0%, 87.5% 5%, 88.75% 0%, 
+        90% 5%, 91.25% 0%, 92.5% 5%, 
+        93.75% 0%, 95% 5%, 96.25% 0%, 
+        97.5% 5%, 98.75% 0%, 100% 5%, 
+        100% 100%, 0% 100%
+    );
 }
-
 
 #stripe-pattern {
-  height: 100%;
-  width: 100%;
-  background-size: 18px 18px;
-  background-image: linear-gradient(
-    -45deg,
-    rgb(var(--primary-stripe-rgb)) 25%,
-    rgb(var(--secondary-stripe-rgb)) 25%,
-    rgb(var(--secondary-stripe-rgb)) 50%,
-    rgb(var(--primary-stripe-rgb)) 50%,
-    rgb(var(--primary-stripe-rgb)) 75%,
-    rgb(var(--secondary-stripe-rgb)) 75%,
-    rgb(var(--secondary-stripe-rgb)) 100%
-  );
-  box-shadow: inset 0rem 0.5rem 2rem 0.25rem rgb(0 0 0 / 40%);
-  animation: scrollBackground 120s linear infinite;
+    height: 100%;
+    width: 100%;
+    background-size: 18px 18px;
+    background-image: linear-gradient(
+        -45deg,
+        rgb(255, 255, 255) 25%,
+        rgb(225, 225, 225) 25%,
+        rgb(225, 225, 225) 50%,
+        rgb(255, 255, 255) 50%,
+        rgb(255, 255, 255) 75%,
+        rgb(225, 225, 225) 75%,
+        rgb(225, 225, 225) 100%
+    );
+    box-shadow: inset 0rem 0.5rem 2rem 0.25rem rgba(0, 0, 0, 0.4);
+    animation: scrollBackground 120s linear infinite;
 }
-
-@font-face {
-    font-family: 'BlockFont'; /* Choose a name for your font family */
-    src: url('BlockFont.otf') format('opentype'); /* Specify the path to your font file */
-    /* You may also need to include additional font formats for better browser compatibility */
-}
-
-/* Add this CSS to center the title */
-#title-section {
-    display: flex;
-    justify-content: center; /* Centers the content horizontally */
-    align-items: center; /* Centers the content vertically */
-    height: 100vh; /* Makes the title section take up the full height of the viewport */
-}
-
-/* Style the title text */
-#title-section h1 {
-    font-family: 'BlockFont', sans-serif;
-    font-size: 32px; /* Adjust the font size as needed */
-    color: grey; /* Set the text color */
-    text-align: center; /* Center-align the text */
-}
-
