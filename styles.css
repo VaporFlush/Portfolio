@@ -116,7 +116,7 @@ body, html {
 
 /* Project Container */
 .project-container {
-    width: 90%; /* Adjust the percentage width as needed */
+    width: 33%; /* Adjust the percentage width as needed */
     margin: 0 auto 20px; /* Center the container horizontally and add bottom margin */
     background-color: #dddddd;
     border-radius: 8px;
