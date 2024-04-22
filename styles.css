@@ -64,8 +64,7 @@ body, html {
   z-index: 3;
   left: 50%;
   bottom: 0px;
-  height: 28vh;
-  min-height: 240px;
+  translate: -50% 0%;
   width: 100%;
   min-width: 2000px;
   background-color: rgb(var(--stripe-primary-rgb));
@@ -101,6 +100,7 @@ body, html {
     100% 100%, 0% 100%
   );
 }
+
 
 #stripe-pattern {
   height: 100%;
