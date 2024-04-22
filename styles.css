@@ -47,7 +47,7 @@ body, html {
     bottom: 0;
     transform: translateX(-50%);
     width: 100%;
-    height: 60vh;
+    height: 28vh;
     min-height: 240px;
     background-color: rgb(255, 255, 255);
    clip-path: polygon(
@@ -61,7 +61,7 @@ body, html {
         100% 100%, 0% 100%
     );
     overflow-x: hidden;
-    /*overflow-y: hidden; */
+    overflow-y: hidden;
 }
 
 #stripe-pattern {
