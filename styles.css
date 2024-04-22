@@ -64,7 +64,6 @@ body, html {
   z-index: 3;
   left: 50%;
   bottom: 0px;
-  translate: -50% 0%;
   height: 28vh;
   min-height: 240px;
   width: 100%;
