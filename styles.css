@@ -1,18 +1,20 @@
-
 body, html {
     margin: 0;
     padding: 0;
-    height: 100%;
+    height: auto; /* Change height to auto */
     overflow: hidden;
 }
 
-#stars {
-    position: fixed;
+#stars, #gradient, #radial-gradient {
+    position: absolute; /* Change position to absolute */
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -2; /* Place stars behind other content */
+}
+
+#stars {
+    z-index: -2;
     background-image: url('https://raw.githubusercontent.com/VaporFlush/Website/main/Stars.png');
     background-repeat: repeat;
     background-size: 10%;
@@ -20,22 +22,12 @@ body, html {
 }
 
 #gradient {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -3; /* Place gradient behind stars */
+    z-index: -3;
     background-image: linear-gradient(to bottom, #0d47a1, #1565c0);
 }
 
 #radial-gradient {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1; /* Place radial gradient behind stars */
+    z-index: -1;
     background-image: radial-gradient(circle, rgba(13, 71, 161, 0) 0%, rgba(13, 71, 161, 0.8) 100%);
 }
 
@@ -51,10 +43,9 @@ body, html {
 #bar {
     position: absolute;
     bottom: 0;
-    left: 0; /* Position it in the middle of the screen horizontally */
-    width: 100%; /* Adjust the width as needed */
-    height: 100px; /* Make it extend the full height of the viewport */
+    left: 0;
+    width: 100%;
+    height: 2px; /* Adjust the height as needed */
     background-color: #ffffff; /* Change the color as desired */
     z-index: -1; /* Ensure it's behind other content */
 }
-
