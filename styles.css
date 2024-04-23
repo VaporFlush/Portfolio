@@ -218,6 +218,8 @@ body, html {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    max-height: 80%;
+    overflow-y: auto;
 }
 
 .close-button {
