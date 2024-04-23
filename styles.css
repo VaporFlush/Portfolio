@@ -163,7 +163,7 @@ body, html {
     justify-content: flex-end;
     align-items: center;
     padding: 0 20px;
-    z-index: 999;
+    z-index: -1;
 }
 
 .about-button {
