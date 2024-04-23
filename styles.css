@@ -225,13 +225,13 @@ body, html {
 
 .close-button {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 5%;
+    right: 5%;
     background: transparent;
     border: none;
     cursor: pointer;
     font-size: 16px;
-    color: #333;
+    color: #ffffff;
 }
 
 .close-button:hover {
