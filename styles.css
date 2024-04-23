@@ -195,7 +195,18 @@ body, html {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: -1;
+    z-index: 9999;
+}
+
+.info-header {
+    background-color: #222; /* Darker background color */
+    padding: 20px;
+    text-align: center;
+}
+
+.info-header h2 {
+    color: #fff; /* White text color */
+    margin: 0; /* Remove default margin */
 }
 
 .info-content {
