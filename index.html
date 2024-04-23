@@ -14,7 +14,10 @@
     
     <!-- Top Bar -->
     <div class="top-bar">
-        <button class="about-button">About Me</button>
+        <button class="about-button" onclick="toggleMenu()">About Me</button>
+        <div class="about-menu" id="about-menu">
+            <textarea id="about-text" placeholder="Type your information here..."></textarea>
+        </div>
     </div>
     
     <!-- Title Section -->
@@ -54,5 +57,13 @@
     <div id="stripe-container">
         <div id="stripe-pattern"></div>
     </div>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("about-menu");
+            menu.classList.toggle("show");
+        }
+    </script>
+    
 </body>
 </html>
