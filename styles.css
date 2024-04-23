@@ -163,7 +163,7 @@ body, html {
     justify-content: flex-end;
     align-items: center;
     padding: 0 20px;
-    z-index: -1;
+    z-index: 999;
 }
 
 .about-button {
@@ -175,12 +175,33 @@ body, html {
     cursor: pointer;
     font-size: 16px;
     text-transform: uppercase;
-    margin-right: 5%; /* Add margin to the right side of the button */
+    margin-right: 10px;
 }
 
 .about-button:hover {
     background-color: #ddd;
 }
 
-/* Rest of your existing styles go here */
+.about-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background-color: #fff;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 10px;
+}
 
+.about-menu.show {
+    display: block;
+}
+
+.about-menu textarea {
+    width: 200px;
+    height: 100px;
+    resize: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
