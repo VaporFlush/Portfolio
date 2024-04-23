@@ -164,7 +164,8 @@ body, html {
     justify-content: flex-end;
     align-items: center;
     padding: 0 20px;
-    z-index: 0;
+    z-index: 999;
+    pointer-events: none;
 }
 
 .about-button {
@@ -178,6 +179,7 @@ body, html {
     text-transform: uppercase;
     margin-right: 5%;
     z-index: 5;
+    pointer-events: auto;
 }
 
 .about-button:hover {
