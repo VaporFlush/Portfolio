@@ -153,12 +153,17 @@ body, html {
 
 /* Top Bar */
 .top-bar {
+    position: fixed; /* Add this line to make the bar fixed */
+    top: 0; /* Position it at the top of the viewport */
+    left: 0; /* Align it to the left */
+    width: 100%; /* Make it span the entire width of the viewport */
     background-color: #333;
     height: 50px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding: 0 20px;
+    z-index: 999; /* Ensure it's above other content */
 }
 
 .about-button {
@@ -175,5 +180,3 @@ body, html {
 .about-button:hover {
     background-color: #ddd;
 }
-
-/* Rest of your existing styles go here */
