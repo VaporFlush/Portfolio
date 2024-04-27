@@ -13,3 +13,8 @@ aboutButton.addEventListener('click', toggleInfoBox);
 // Get the close button and add event listener
 const closeButton = document.querySelector('.close-button');
 closeButton.addEventListener('click', toggleInfoBox);
+
+function toggleProjectDetails(projectId) {
+    const projectDetails = document.getElementById(`project-details-${projectId}`);
+    projectDetails.style.display = projectDetails.style.display === 'none' ? 'block' : 'none';
+}
