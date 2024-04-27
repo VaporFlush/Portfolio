@@ -14,7 +14,15 @@ aboutButton.addEventListener('click', toggleInfoBox);
 const closeButton = document.querySelector('.close-button');
 closeButton.addEventListener('click', toggleInfoBox);
 
-function toggleProjectDetails(projectId) {
-    const projectDetails = document.getElementById(`project-details-${projectId}`);
-    projectDetails.style.display = projectDetails.style.display === 'none' ? 'block' : 'none';
-}
+document.addEventListener('DOMContentLoaded', function() {
+    const projectContainers = document.querySelectorAll('.project-container');
+    
+    projectContainers.forEach(function(container) {
+        container.addEventListener('click', function() {
+            const projectId = container.getAttribute('data-project-id');
+            const projectDetails = document.getElementById(`project-details-${projectId}`);
+            projectDetails.style.display = projectDetails.style.display === 'none' ? 'block' : 'none';
+        });
+    });
+});
+
