@@ -33,12 +33,23 @@ document.addEventListener('DOMContentLoaded', function() {
     
     projectButtons.forEach(function(button, index) {
         button.addEventListener('click', function() {
-            projectPopups.forEach(function(popup) {
-                popup.style.display = 'none';
-            });
-            
             const projectPopup = document.getElementById(`project-details-${index + 1}`);
-            projectPopup.style.display = 'block';
+            toggleProjectPopup(projectPopup);
         });
     });
 });
+
+// Function to toggle project details pop-up visibility
+function toggleProjectPopup(popup) {
+    if (popup.style.display === 'block') {
+        popup.style.display = 'none';
+    } else {
+        // Hide all other project pop-ups
+        const projectPopups = document.querySelectorAll('.project-popup');
+        projectPopups.forEach(function(popup) {
+            popup.style.display = 'none';
+        });
+        // Show the clicked project pop-up
+        popup.style.display = 'block';
+    }
+}
