@@ -243,3 +243,9 @@ body, html {
     z-index: 1000; /* Set a higher z-index to bring the scroll bar in front */
 }
 
+.project-popup {
+    position: absolute;
+    z-index: 1000;
+    display: none;
+    /* Add any other necessary styling */
+}
