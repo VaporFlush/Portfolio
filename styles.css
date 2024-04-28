@@ -239,3 +239,7 @@ body, html {
     color: #ff0000;
 }
 
+::-webkit-scrollbar {
+    z-index: 1000; /* Set a higher z-index to bring the scroll bar in front */
+}
+
