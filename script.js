@@ -45,36 +45,42 @@ function toggleProjectPopup(projectDetails) {
     }
 }
 
-document.body.addEventListener('wheel', function(event) {
+document.addEventListener('DOMContentLoaded', function() {
     // Get all project containers
     const projectContainers = document.querySelectorAll('.project-container');
     
-    // Find the currently visible project container
-    let currentContainer = null;
-    projectContainers.forEach(function(container) {
-        const rect = container.getBoundingClientRect();
-        if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
-            currentContainer = container;
+    // Add event listener to the document body for scrolling
+    document.body.addEventListener('wheel', function(event) {
+        // Prevent default scrolling behavior
+        event.preventDefault();
+        
+        // Find the currently visible project container
+        let currentContainer = null;
+        projectContainers.forEach(function(container) {
+            const rect = container.getBoundingClientRect();
+            if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+                currentContainer = container;
+            }
+        });
+        
+        // If a project container is found and scrolling down
+        if (currentContainer && event.deltaY > 0) {
+            // Get the next sibling container
+            const nextContainer = currentContainer.nextElementSibling;
+            if (nextContainer) {
+                // Scroll to the next container
+                nextContainer.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+        
+        // If a project container is found and scrolling up
+        if (currentContainer && event.deltaY < 0) {
+            // Get the previous sibling container
+            const prevContainer = currentContainer.previousElementSibling;
+            if (prevContainer) {
+                // Scroll to the previous container
+                prevContainer.scrollIntoView({ behavior: 'smooth', block: 'end' });
+            }
         }
     });
-    
-    // If a project container is found and scrolling down
-    if (currentContainer && event.deltaY > 0) {
-        // Get the next sibling container
-        const nextContainer = currentContainer.nextElementSibling;
-        if (nextContainer) {
-            // Scroll to the next container
-            nextContainer.scrollIntoView({ behavior: 'smooth' });
-        }
-    }
-    
-    // If a project container is found and scrolling up
-    if (currentContainer && event.deltaY < 0) {
-        // Get the previous sibling container
-        const prevContainer = currentContainer.previousElementSibling;
-        if (prevContainer) {
-            // Scroll to the previous container
-            prevContainer.scrollIntoView({ behavior: 'smooth', block: 'end' });
-        }
-    }
 });
