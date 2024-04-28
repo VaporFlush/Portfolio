@@ -28,15 +28,29 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Function to toggle project details pop-up visibility
 function toggleProjectPopup(projectDetails) {
-    if (projectDetails.style.display === 'block') {
-        projectDetails.style.display = 'none';
-    } else {
-        // Hide all other project pop-ups
-        const projectPopups = document.querySelectorAll('.project-popup');
-        projectPopups.forEach(function(popup) {
-            popup.style.display = 'none';
-        });
-        // Show the clicked project pop-up
-        projectDetails.style.display = 'block';
-    }
+    const projectPopup = document.getElementById('project-popup');
+    const popupBody = projectPopup.querySelector('.popup-body');
+    // Update popup content with project details
+    popupBody.innerHTML = projectDetails.innerHTML;
+    projectPopup.style.display = projectPopup.style.display === 'none' ? 'block' : 'none';
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const projectContainers = document.querySelectorAll('.project-container');
+
+    projectContainers.forEach(function(container) {
+        container.addEventListener('click', function() {
+            const projectId = container.getAttribute('data-project-id');
+            const projectDetails = document.getElementById(`project-details-${projectId}`);
+            toggleProjectPopup(projectDetails);
+        });
+    });
+
+    // Add event listener to close project popup button
+    const closePopupButton = document.querySelector('.close-popup-button');
+    closePopupButton.addEventListener('click', function() {
+        const projectPopup = document.getElementById('project-popup');
+        projectPopup.style.display = 'none';
+    });
+});
+
