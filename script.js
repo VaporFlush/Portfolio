@@ -26,3 +26,19 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// Function to toggle project details pop-up
+document.addEventListener('DOMContentLoaded', function() {
+    const projectButtons = document.querySelectorAll('.project-container');
+    const projectPopups = document.querySelectorAll('.project-popup');
+    
+    projectButtons.forEach(function(button, index) {
+        button.addEventListener('click', function() {
+            projectPopups.forEach(function(popup) {
+                popup.style.display = 'none';
+            });
+            
+            const projectPopup = document.getElementById(`project-details-${index + 1}`);
+            projectPopup.style.display = 'block';
+        });
+    });
+});
