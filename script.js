@@ -21,27 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
         container.addEventListener('click', function() {
             const projectId = container.getAttribute('data-project-id');
             const projectDetails = document.getElementById(`project-details-${projectId}`);
-            toggleProjectPopup(projectDetails);
+            projectDetails.style.display = projectDetails.style.display === 'none' ? 'block' : 'none';
         });
     });
 });
-
-// Function to toggle project details pop-up visibility
-function toggleProjectPopup(projectDetails) {
-    const popupWrapper = document.querySelector('.popup-wrapper');
-    
-    if (projectDetails.style.display === 'block') {
-        projectDetails.style.display = 'none';
-        popupWrapper.style.display = 'none';
-    } else {
-        // Hide all other project pop-ups
-        const projectPopups = document.querySelectorAll('.project-popup');
-        projectPopups.forEach(function(popup) {
-            popup.style.display = 'none';
-        });
-        // Show the clicked project pop-up
-        projectDetails.style.display = 'block';
-        popupWrapper.style.display = 'flex'; // Show the wrapper
-    }
-}
-
