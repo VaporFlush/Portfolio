@@ -1,4 +1,4 @@
-// Get the About Me button and info box
+/ Get the About Me button and info box
 const aboutButton = document.querySelector('.about-button');
 const infoBox = document.querySelector('.info-box');
 
@@ -25,3 +25,31 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+// Function to toggle project details pop-up
+document.addEventListener('DOMContentLoaded', function() {
+    const projectButtons = document.querySelectorAll('.project-container');
+    const projectPopups = document.querySelectorAll('.project-popup');
+    
+    projectButtons.forEach(function(button, index) {
+        button.addEventListener('click', function() {
+            const projectPopup = document.getElementById(`project-details-${index + 1}`);
+            toggleProjectPopup(projectPopup);
+        });
+    });
+});
+
+// Function to toggle project details pop-up visibility
+function toggleProjectPopup(popup) {
+    if (popup.style.display === 'block') {
+        popup.style.display = 'none';
+    } else {
+        // Hide all other project pop-ups
+        const projectPopups = document.querySelectorAll('.project-popup');
+        projectPopups.forEach(function(popup) {
+            popup.style.display = 'none';
+        });
+        // Show the clicked project pop-up
+        popup.style.display = 'block';
+    }
+}
