@@ -243,28 +243,9 @@ body, html {
     z-index: 1000; /* Set a higher z-index to bring the scroll bar in front */
 }
 
-.popup-wrapper {
-    display: flex;
-    justify-content: center; /* Horizontally center */
-    align-items: center; /* Vertically center */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1000;
-}
-
 .project-popup {
+    position: absolute;
+    z-index: 1000;
     display: none;
-    position: relative; /* Change from absolute to relative */
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    max-width: 80%; /* Adjust as needed */
-    max-height: 80%; /* Adjust as needed */
-    overflow-y: auto;
-    z-index: 1001; /* Ensure it's above the overlay */
+    /* Add any other necessary styling */
 }
-
