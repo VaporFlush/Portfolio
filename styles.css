@@ -231,7 +231,7 @@ body, html {
     border: none;
     cursor: pointer;
     font-size: 16px;
-    color: #ffffff;
+    color: #aaaaaa;
 }
 
 .close-popup-button {
@@ -242,7 +242,7 @@ body, html {
     border: none;
     cursor: pointer;
     font-size: 16px;
-    color: #ffffff;
+    color: #aaaaaa;
 }
 
 .about-button:hover {
