@@ -9,18 +9,15 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Add event listener to close project popup button
-    const closePopupButton = document.querySelector('.close-popup-button');
-    closePopupButton.addEventListener('click', function() {
-        const projectPopup = document.getElementById('project-popup');
-        projectPopup.style.display = 'none';
-    });
-
-    // Add event listener to close button inside project details pop-up
-    const closeProjectDetailsButton = document.querySelector('.close-project-details-button');
-    closeProjectDetailsButton.addEventListener('click', function() {
-        const projectPopup = document.getElementById('project-popup');
-        projectPopup.style.display = 'none';
+    // Add event listener to close pop-up buttons
+    const closePopupButtons = document.querySelectorAll('.close-popup-button');
+    closePopupButtons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            const popup = button.closest('.popup');
+            if (popup) {
+                popup.style.display = 'none';
+            }
+        });
     });
 });
 
