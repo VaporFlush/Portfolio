@@ -202,6 +202,7 @@ body, html {
     background-color: #222; /* Darker background color */
     padding: 20px;
     text-align: center;
+    position: relative; /* Ensure relative positioning for absolute positioning of the close button */
 }
 
 .info-header h2 {
@@ -224,10 +225,10 @@ body, html {
     overflow-y: auto;
 }
 
-.close-button {
+.close-popup-button {
     position: absolute;
-    top: 30px;
-    right: 30px;
+    top: 10px;
+    left: 10px;
     background: transparent;
     border: none;
     cursor: pointer;
