@@ -9,15 +9,11 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Add event listener to close pop-up buttons
-    const closePopupButtons = document.querySelectorAll('.close-popup-button');
-    closePopupButtons.forEach(function(button) {
-        button.addEventListener('click', function() {
-            const popup = button.closest('.popup');
-            if (popup) {
-                popup.style.display = 'none';
-            }
-        });
+    // Add event listener to close project details pop-up
+    const closePopupButton = document.querySelector('.close-popup-button');
+    closePopupButton.addEventListener('click', function() {
+        const projectPopup = document.getElementById('project-popup');
+        projectPopup.style.display = 'none';
     });
 });
 
@@ -27,5 +23,5 @@ function toggleProjectPopup(projectDetails) {
     const popupBody = projectPopup.querySelector('.popup-body');
     // Update popup content with project details
     popupBody.innerHTML = projectDetails.innerHTML;
-    projectPopup.style.display = projectPopup.style.display === 'none' ? 'block' : 'none';
+    projectPopup.style.display = 'block';
 }
