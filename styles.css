@@ -223,6 +223,17 @@ body, html {
     overflow-y: auto;
 }
 
+.about-button {
+    position: absolute;
+    top: 5%;
+    left: 2.5%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #ffffff;
+}
+
 .close-popup-button {
     position: absolute;
     top: 5%;
@@ -234,7 +245,11 @@ body, html {
     color: #ffffff;
 }
 
-.close-button:hover {
+.about-button:hover {
+    color: #ff0000;
+}
+
+.close-popup-button:hover {
     color: #ff0000;
 }
 
