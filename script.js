@@ -9,8 +9,22 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Add event listener to close project details pop-up
-    const closePopupButton = document.querySelector('.close-popup-button');
+    // Event listener for About Me button
+    const aboutButton = document.querySelector('.about-button');
+    aboutButton.addEventListener('click', function() {
+        const infoBox = document.querySelector('.info-box');
+        infoBox.style.display = infoBox.style.display === 'none' ? 'block' : 'none';
+    });
+
+    // Event listener for close button in About Me pop-up
+    const closeAboutButton = document.querySelector('.close-popup-button');
+    closeAboutButton.addEventListener('click', function() {
+        const infoBox = document.querySelector('.info-box');
+        infoBox.style.display = 'none';
+    });
+
+    // Event listener for close button in project details pop-up
+    const closePopupButton = document.querySelector('.close-project-details-button');
     closePopupButton.addEventListener('click', function() {
         const projectPopup = document.getElementById('project-popup');
         projectPopup.style.display = 'none';
