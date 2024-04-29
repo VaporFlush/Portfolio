@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Event listener for close button in project details pop-up
-    const closePopupButton = document.querySelector('.close-project-details-button');
+    const closePopupButton = document.querySelector('#project-popup .close-popup-button');
     closePopupButton.addEventListener('click', function() {
         const projectPopup = document.getElementById('project-popup');
         projectPopup.style.display = 'none';
