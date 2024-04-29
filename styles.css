@@ -226,6 +226,7 @@ body, html {
 .about-button {
     position: absolute;
     top: 5%;
+    left: 0%;
     background: transparent;
     border: none;
     cursor: pointer;
