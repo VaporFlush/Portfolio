@@ -226,7 +226,7 @@ body, html {
 .close-popup-button {
     position: absolute;
     top: 5%;
-    left: 5%;
+    left: 2.5%;
     background: transparent;
     border: none;
     cursor: pointer;
