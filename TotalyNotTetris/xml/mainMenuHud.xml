@@ -1,6 +1,0 @@
-﻿<hud name="pause hud" width="800" height="600">
-	<element name="ButtonStart"			pos_x="0.0" pos_y="0.2" scale_x="1.0" scale_y="1" rotation="0.0" depth="0.0005" sr_x="0"	  sr_y="0"	 sr_w="800" sr_h="600" textureName ="Button"/>
-	<element name="ButtonScreenType"		pos_x="0.0" pos_y="0.0" scale_x="1.0" scale_y="1" rotation="0.0" depth="0.0005" sr_x="0"	  sr_y="0"	 sr_w="800" sr_h="600" textureName ="Button"/>
-	<element name="ButtonCredit"			pos_x="0.0" pos_y="-0.2" scale_x="1.0" scale_y="1" rotation="0.0" depth="0.0005" sr_x="0"	  sr_y="0"	 sr_w="800" sr_h="600" textureName ="Button"/>
-	<element name="ButtonQuit"			pos_x="0.0" pos_y="-0.4" scale_x="1.0" scale_y="1" rotation="0.0" depth="0.0005" sr_x="0"	  sr_y="0"	 sr_w="800" sr_h="600" textureName ="Button"/>
-</hud>
