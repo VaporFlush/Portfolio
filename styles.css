@@ -238,14 +238,21 @@ body, html {
 
 .close-popup-button {
     position: absolute;
-    top: 30px;
-    left: 2.5%;
+    top: 10%;
+    right: 2%;
     background: transparent;
     border: none;
     cursor: pointer;
     font-size: 16px;
     color: #aaaaaa;
+    z-index: 1001; /* Ensure the close button is above other content */
 }
+
+.project-popup .popup-header .close-popup-button {
+    top: 30px;
+    right: 5%;
+}
+
 
 .about-button:hover {
     color: #ff0000;
@@ -269,10 +276,7 @@ body, html {
     width: 80%;
     max-width: 600px;
     background-color: #fff;
-    padding-bottom: 20px;
-    padding-top: 0;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
